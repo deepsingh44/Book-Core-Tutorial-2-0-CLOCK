@@ -68,7 +68,7 @@ public class Search extends JInternalFrame {
 				if (!item.isEmpty()) {
 
 					List<Book> books= BookDao.getBookDao().searchByName(item);
-					System.out.println(books.size());
+					Util.warningMessage(Search.this, books.size()+"");
 					
 				} else {
 					Util.warningMessage(Search.this, "Please enter name of book");
