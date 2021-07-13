@@ -1,0 +1,11 @@
+create database bookdb;
+
+CREATE TABLE books (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(35) NOT NULL,
+    price float,
+    date varchar(20),
+    image varchar(50),
+    PRIMARY KEY (id)
+);
+
